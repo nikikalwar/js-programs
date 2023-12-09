@@ -22,11 +22,6 @@ console.log(flattenedArrays);
 
 
 
-
-
-
-
-
 //using reduce
 const nestedNumbers = [[1, 2], [3, 4], [5, [6, 7]]];
 const flatt = nestedNumbers.reduce((acc,currentValue)=>Array.isArray(currentValue)?currentValue.reduce((a,b)=>acc.concat(...currentValue),[]):acc.concat(currentValue),[]);
